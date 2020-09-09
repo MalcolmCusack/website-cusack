@@ -1,0 +1,46 @@
+.body {
+    height: 1000px;
+    display: flex;
+    
+}
+
+.body > img {
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+.animation{
+    
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    font-size: 50px;
+    padding: 25px 0;
+    background: black;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+
+  }
+  .animation:before{
+    content:"";
+    position:absolute;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    background:
+      linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255))left/50.5% 100%,
+      linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255))right/50.5% 100%;
+    background-repeat:no-repeat;
+    transition:0.5s all;
+    border-radius: 50%;
+  }
+  .animation:hover::before {
+    background-size:0% 100%;
+  }

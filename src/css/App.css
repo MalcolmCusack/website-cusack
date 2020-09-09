@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    
+}
+
+.app {
+    background-image: url(../background.jpeg);
+    width: 100%;
+    height: auto;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
